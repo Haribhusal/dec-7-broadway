@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation-name:testANim;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            /* animation-delay: 5s; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes testANim {
+            0%{
+                /* background-color: orange; */
+                height: 100px;
+                width: 100px;
+                border-radius: 0px;
+            }  
+            25%{
+                background-color: green;
+                height: 300px;
+                width: 300px;
+                transform: translateX(100px) rotate(90deg);
+                border-radius: 50px;
+            }
+            50%{
+                background-color: blue;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                transform: translateX(500px) rotate(45deg);
+            }
+            75%{
+                background-color: orange;
+                height: 500px;
+                width: 500px;
+                border-radius: 10px;
+                transform: translateX(300px) rotate(30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box"></div>
+    
+</body>
+</html>

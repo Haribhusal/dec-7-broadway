@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <audio controls id="audioFile">
+        <source src="./audio-file.m4a">
+    </audio>
+
+    &lt;audio controls id=&block;sth&block; autoplay &gt
+
+
+    
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Link1</a>
+            </li>
+            <li>
+                <a href="#">Link1</a>
+            </li>
+            <li>
+                <a href="#">Link1</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="nav">
+        <ul>
+            <li>
+                <a href="#">Link1</a>
+            </li>
+            <li>
+                <a href="#">Link1</a>
+            </li>
+            <li>
+                <a href="#">Link1</a>
+            </li>
+        </ul>
+    </div>
+    
+
+    <button id="play">Play Audio</button>
+    <button id="pause">Pause Audio</button>
+
+
+    <script>
+
+        var playButton = document.getElementById('play');
+        var pauseButton = document.getElementById('pause');
+        var audioFileToPlay = document.getElementById('audioFile');
+
+
+        playButton.addEventListener('click', function(){
+            audioFileToPlay.play();
+        })
+        pauseButton.addEventListener('click', function(){
+            audioFileToPlay.pause();
+        })
+
+
+    </script>
+    
+
+</body>
+</html>

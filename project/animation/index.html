@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-color: #00cdff;
+        overflow-x: hidden;
+      }
+      .track{
+        border-bottom: 5px dashed wheat;
+        width: 100%;
+       
+        position: absolute;
+        top: 40%;
+      }
+      img{
+        animation: goToRight 10s ease  infinite both;
+      }
+      @keyframes goToRight {
+        from{
+            transform: translateX(0);
+
+        }
+        to{
+            transform: translateX(300%);
+
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+   
+      <img src="./jeep.gif" alt="" />
+    <div class="track"></div>
+  </body>
+</html>

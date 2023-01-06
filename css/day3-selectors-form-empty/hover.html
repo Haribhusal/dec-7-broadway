@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* shorthand Properties
+        border
+        backhground
+        outline
+
+        
+        */
+      .btn {
+        background-color: green;
+        text-decoration: underline;
+        padding: 30px;
+        font-size: 30px;
+        color: #fff;
+        border: 10px solid red;
+
+        /* font: italic bold 0.8em/1.2 Arial, sans-serif; */
+
+        /* font-style: italic;
+        font-weight: bold;
+        font-size: 0.8em;
+        line-height: 1.2;
+        font-family: Arial, sans-serif; */
+
+        /* shorthand property */
+
+        border-width: 10px;
+        border-style: solid;
+        border-color: red;
+        transition: all 2s ease-in;
+      }
+
+      .btn:hover {
+        background-color: yellow;
+        text-decoration: none;
+        color: black;
+        border-width: 30px;
+        /* cursor: ; */
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Read More</button>
+
+
+  </body>
+
+  <script>
+
+
+const printValues =()=>{
+    console.log(1);
+    setTimeout(()=> console.log(2), 1000);
+    setTimeout(()=> console.log(3), 0);
+    console.log(4);
+}
+
+printValues();
+
+  </script>
+</html>

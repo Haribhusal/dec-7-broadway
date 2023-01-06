@@ -1,0 +1,17 @@
+.addedAnimation{
+    animation: moveHead 1s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-iteration-count: infinite;
+    transform-origin: left;
+}
+
+@keyframes moveHead {
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(10deg);
+
+    }
+}
+

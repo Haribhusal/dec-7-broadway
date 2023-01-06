@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+p {
+  width: 13em;
+  margin: 2px;
+  background: gold;
+}
+
+.ow-anywhere {
+  overflow-wrap: anywhere;
+}
+
+.ow-break-word {
+  overflow-wrap: break-word;
+}
+
+.word-break {
+  word-break: break-all;
+}
+
+.hyphens {
+  hyphens: auto;
+}
+
+    </style>
+</head>
+<body>
+    
+    <p>
+        1They say the fishing is excellent at Lake
+        <em class="normal">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>, though
+        I've never been there myself. (<code>normal</code>)
+      </p>
+      <p>
+       2 They say the fishing is excellent at Lake
+        <em class="ow-anywhere">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+        though I've never been there myself. (<code>overflow-wrap: anywhere</code>)
+      </p>
+      <p>
+       3 They say the fishing is excellent at Lake
+        <em class="ow-break-word">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+        though I've never been there myself. (<code>overflow-wrap: break-word</code>)
+      </p>
+      <p>
+       4 They say the fishing is excellent at Lake
+        <em class="word-break">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+        though I've never been there myself. (<code>word-break</code>)
+      </p>
+      <p>
+       5 They say the fishing is excellent at Lake
+        <em class="hyphens">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>, though
+        I've never been there myself. (<code>hyphens</code>, without
+        <code>lang</code> attribute)
+      </p>
+      <p lang="en">
+        6They say the fishing is excellent at Lake
+        <em class="hyphens">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>, though
+        I've never been there myself. (<code>hyphens</code>, English rules)
+      </p>
+      <p class="hyphens" lang="de">
+       7 They say the fishing is excellent at Lake
+        <em class="hyphens">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>, though
+        I've never been there myself. (<code>hyphens</code>, German rules)
+      </p>
+      
+</body>
+</html>

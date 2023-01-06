@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        overflow-x: auto;
+        overflow-y: auto;
+        opacity: 0;
+        transition: opacity 5s cubic-bezier(.97,.05,.97,.56);
+        /* transition timing function */
+      }
+      .box:hover{
+        opacity: 1;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div style="width: 600px; height: 30px; background-color: green"></div>
+      Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Lorem ipsum
+      dolor sit.
+    </div>
+  </body>
+</html>

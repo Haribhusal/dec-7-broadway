@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      section {
+        counter-reset: sectionCounter;
+
+        text-decoration: underline;
+        background-color: yellow;
+        color: red;
+      }
+
+      section::before {
+        counter-increment: sectionCounter;
+        content: "Main Unit-" counter(sectionCounter) ".";
+      }
+      h2 {
+        counter-reset: subUnitCounter;
+      }
+      h2::before {
+        counter-increment: subUnitCounter;
+        content: "subsection" counter(subUnitCounter);
+      }
+    </style>
+  </head>
+  <body>
+    <section>Unit</section>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <section>Unit</section>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <section>Unit</section>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+    <h2>Sub Unit</h2>
+  </body>
+</html>
