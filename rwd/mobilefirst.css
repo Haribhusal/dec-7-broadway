@@ -1,0 +1,35 @@
+main aside{
+    background-color: green;
+}
+
+main .content img{
+    max-width: 100%;
+}
+
+.gallery img{
+    width: 48%;
+    display: inline-block;
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main aside ul li{
+        display: inline-block;
+    }
+    main aside{
+        background-color: red;
+    }
+    .gallery img{
+        width: 24%;
+        display: inline-block;
+        border: 5px solid red;
+        box-sizing: border-box;
+    }
+}
+@media screen and (min-width: 1000px) {
+    main aside{
+        background-color: blue;
+    } 
+}

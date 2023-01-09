@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header .logo,
+      header nav {
+        display: inline-block;
+      }
+      header {
+        padding: 20px 30px;
+        position: relative;
+        border-bottom: 1px solid black;
+      }
+      header nav {
+        float: right;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav a {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        color: #000;
+      }
+
+      @media screen and (max-width: 768px) {
+        header nav ul {
+          display: none;
+        }
+        header nav .hey {
+          display: block;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 100%;
+          padding: 20px 30px;
+          background-color: black;
+        }
+        header nav li {
+          display: block !important;
+        }
+        header nav li a {
+          color: #fff;
+        }
+        header .hey a {
+          padding: 10px 0px;
+          display: block;
+          transition: all 0.5s ease;
+        }
+        header .hey a:hover {
+          color: yellow;
+          background-color: rgba(255, 255, 255, 0.3);
+          padding-left: 15px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        header nav button {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h3 class="title">Logo Here</h3>
+      </div>
+      <nav>
+        <button id="headerToggle">Show Menu</button>
+        <ul id="headerMenu">
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio
+      excepturi, voluptatum maiores totam vero eum! Beatae facere alias earum at
+      ipsa error veniam. Rem reiciendis velit dolorem ea nam. Voluptas minus
+      natus placeat praesentium explicabo aut delectus exercitationem nostrum
+      debitis repellendus, itaque sapiente dolore a iste libero dicta maiores
+      quia. Ea nulla error quas magni voluptas. Dignissimos, quo illum.
+      Architecto sed et velit cum nam omnis dolor, quas optio, quisquam,
+      eligendi blanditiis dignissimos delectus libero ipsam eos unde? Magni
+      doloribus placeat repellendus amet culpa molestias explicabo dolores
+      perspiciatis tempora! Ut tempora corrupti similique necessitatibus!
+      Distinctio tempore quisquam blanditiis ipsa delectus nobis nostrum alias
+      voluptatem, consequatur totam omnis dolores ullam excepturi quam incidunt
+      maiores, tempora quae error. Illo, nulla recusandae. Enim ipsum quae cum
+      voluptas, perferendis, blanditiis voluptatem magni beatae voluptatum
+      impedit pariatur vero. Cum eligendi dolor aliquam ea nobis aut blanditiis,
+      inventore dolore praesentium unde necessitatibus natus velit dignissimos.
+      Labore delectus rerum itaque ullam earum corporis soluta doloremque enim
+      necessitatibus amet consequatur commodi, vel debitis impedit sint
+      aspernatur mollitia, adipisci, quos magnam nam numquam explicabo minus
+      maiores vitae. Aut! Consectetur nam explicabo omnis doloribus, repudiandae
+      expedita porro, quasi aperiam nulla eius laborum quaerat magni, fugit
+      dolores amet sunt mollitia magnam facilis nemo non tempora? Esse neque
+      ipsam distinctio nisi. Illo, error cumque voluptatem totam consequatur,
+      enim neque debitis explicabo laboriosam rem officia, laborum magni
+      deleniti assumenda maiores accusantium doloribus. Quam accusamus deleniti
+      exercitationem vel natus sapiente architecto sunt nesciunt. Nam ratione
+      laboriosam repellat fugiat aspernatur optio maiores nulla suscipit,
+      molestias numquam aut delectus temporibus culpa sint architecto unde odio,
+      quod molestiae doloribus itaque illum autem minima dolorum. Recusandae,
+      impedit? Sed asperiores quisquam animi eligendi vel fugiat aliquid ex
+      dignissimos perferendis. Praesentium aspernatur quia minima fugiat odit
+      voluptatem consectetur consequuntur earum quos temporibus! Veniam esse
+      optio earum qui ducimus consequuntur.
+    </main>
+
+    <script>
+      var myButton = document.getElementById("headerToggle");
+      var myMenu = document.getElementById("headerMenu");
+      myButton.addEventListener("click", function () {
+        myMenu.classList.toggle("hey");
+      });
+    </script>
+  </body>
+</html>

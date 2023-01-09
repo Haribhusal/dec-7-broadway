@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    height: 20vh;
+    background-color: green;
+    color: #fff;
+  }
+
+  main aside {
+    width: 38%;
+    background-color: gray;
+    display: inline-block;
+    height: 100%;
+  }
+  main .content {
+    width: 60%;
+    display: inline-block;
+    height: 100%;
+  }
+  footer {
+    background-color: black;
+    color: #fff;
+    height: 20vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    main aside {
+      width: 100%;
+      background-color: red;
+      padding: 30px;
+
+    }
+    main .content {
+      width: 100%;
+      padding: 30px;
+    }
+  }
