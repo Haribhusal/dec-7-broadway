@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #eee;
+    font-family: "Work Sans", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 30px;
+  }
+  header .left a {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  header .left img {
+    height: 60px;
+  }
+  header .left .title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  header nav ul {
+    display: flex;
+    list-style: none;
+    column-gap: 10px;
+  }
+  header nav ul a {
+    display: block;
+    padding: 40px 15px;
+    font-weight: 600;
+    /* background-color: red; */
+    position: relative;
+  }
+  header nav ul a:hover {
+    color: green;
+  }
+  header nav ul a::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: green;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 99;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  header nav li a:hover::before {
+    opacity: 1;
+    width: 100%;
+  }
+  header nav .active a {
+    color: green;
+  }
+  header nav .active a::before {
+    opacity: 1;
+    width: 100%;
+  }
+  header .right {
+    display: flex;
+    column-gap: 20px;
+  }
+  header .right .btn {
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  header .right .btn:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  header .right .btn-outline {
+    border-color: green;
+    color: green;
+  }
+  header .right .btn-solid {
+    background-color: green;
+    color: #fff;
+  }
