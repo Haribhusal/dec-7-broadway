@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn{
+  padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+:root {
+  --primaryColor: #ff5714;
+  --secondaryColor: #ffb800;
+  --dark: #333333;
+  --white: #ffffff;
+  --primaryOpacityColor: #ff571427;
+  --secondaryOpacityColor: #ffb70025;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+header {
+  background-color: #fff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+header .top-section ul:last-child i {
+  font-size: 30px;
+}
+header .top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+  background-color: var(--secondaryColor);
+}
+header .top-section ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+header .logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+header .logo-section .logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .logo-section .logo img {
+  height: 60px;
+}
+header .menu ul {
+  display: flex;
+  align-items: center;
+}
+header .menu a {
+  display: block;
+  padding: 30px 15px;
+}
+header .menu a:hover {
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+header .user{
+  gap: 10px;
+  display: flex;
+}
+header .user .btn{
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+header .user .btn:hover{
+  background-color: var(--secondaryColor);
+}
+header .user .btn-signup{
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+.home-page .slider-section{
+  display: flex;
+  align-items: stretch;
+}
+.home-page .slider-section .left-categories{
+  flex: 1;
+  padding: 30px 60px;
+  background-color: #f8f8f8;
+}
+.home-page .slider-section .title{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.home-page .slider-section .right-image{
+  flex: 5;
+}
+.home-page .slider-section .cat a{
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home-page .cat a span:last-child{
+  margin-left: 10px;
+  background-color:var(--primaryOpacityColor);
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+}
+
+.home-page .right-image{
+  position: relative;
+}
+.home-page .right-image img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home-page .slider-section .search_form{
+  display: flex;
+  margin-bottom: 10px;
+}
+.home-page .slider-section .search_form .btn-search{
+  background-color: var(--primaryColor);
+  padding: 10px;
+  color: var(--white);
+  cursor: pointer;
+}
+.home-page .slider-section .search_form .form-control{
+  border: 1px solid var(--primaryOpacityColor);
+  padding: 10px 15px;
+}
+.home-page .slider-section .form-control:focus{
+  outline: none;
+  border-color: var(--primaryColor);
+}
+.home-page .categories-section{
+  padding: 60px;
+  display: flex;
+  gap: 60px;
+  background-color: var(--primaryOpacityColor);
+}
+.home-page .categories-section .iconWrapper{
+  flex: 1;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  background-color: var(--white);
+}
+.home-page .categories-section .iconWrapper .icon{
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: var(--primaryColor);
+}
+
+.home-page .recent-products-section {
+  padding: 60px;
+}
+
+.home-page .recent-products-section .productWrapper{
+  background-color: var(--secondaryOpacityColor);
+}
+
+.home-page .recent-products-section .productGrid{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.home-page .productWrapper .info{
+  padding: 20px;
+}
+
+.home-page .productWrapper{
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+
+}
+.home-page .productWrapper .info .heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-page .productWrapper .text{
+  margin: 15px 0;
+}
+
+.home-page .productWrapper .buttons{
+ display: flex;
+ gap: 20px;
+}
+.home-page .productWrapper .btn{
+  /* padding:; */
+  background-color: var(--primaryColor);
+  color: var(--white);
+  border-radius: 4px;
+}
+.home-page .productWrapper .btn:hover{
+  background-color: var(--secondaryColor);
+}
+.home-page .productWrapper img{
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.home-page .productWrapper:hover{
+  background-color: #fff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+ }
+
+.home-page .productWrapper:hover img{
+ transform: scale(1.1);
+}

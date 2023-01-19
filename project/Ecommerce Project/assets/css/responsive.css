@@ -1,0 +1,11 @@
+
+
+@media only screen and (max-width: 992px) {
+  header .top-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .top-section ul:first-child {
+    flex-direction: column;
+  }
+}
