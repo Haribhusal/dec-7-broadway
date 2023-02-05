@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="contact">
+            <div class="contact-item">
+                <i class="las la-map"></i>
+                <div class="info">
+                    <strong>Our Office</strong>
+                    <span>Shankhamul, Kathmandu, Nepal</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="las la-map"></i>
+                <div class="info">
+                    <strong>Email Us</strong>
+                    <a href="mailto:info@example.com">info@example.com</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="las la-map"></i>
+                <div class="info">
+                    <strong>Call us at</strong>
+                    <a href="tel:9847458523">9847458523</a>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="menu">
+            <a href="index.html">
+                <div class="logowrapper">
+                    <i class="las la-leaf"></i>
+                    <h1>Business Name</h1>
+                </div>
+            </a>
+            <nav>
+                <button class="btn btn-toggle-menu">
+                    <i class="las la-angle-down"></i>
+                </button>
+
+                <ul>
+                    <li><a href="/index.html" class="link">Home</a></li>
+                    <li><a href="/index.html" class="link">About us</a></li>
+                    <li><a href="/index.html" class="link">Service</a></li>
+                    <li><a href="/index.html" class="link">Product</a></li>
+                    <li><a href="/index.html" class="link">Pages</a></li>
+                    <li><a href="/index.html" class="link btn btn-contact">Contact <i class="las la-arrow-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        let menuToggleButton = document.querySelector('.btn-toggle-menu');
+        let menu = document.querySelector('nav ul')
+
+    menuToggleButton.addEventListener("click", function(){
+        menu.classList.toggle('strMyMenu');
+        menuToggleButton.querySelector('i').classList.toggle('la-angle-up')
+    })
+    </script>
+    
+</body>
+</html>

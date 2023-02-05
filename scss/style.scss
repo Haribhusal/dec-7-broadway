@@ -1,0 +1,25 @@
+
+// 1 variable
+$primary: orange;
+$black: #000;
+
+
+
+
+body {
+  background-color: red;
+  font-size: 30px;
+}
+body {
+    background-color: $primary;
+    font-size: 30px;
+  }
+
+p {
+  font-size: 30px;
+  text-decoration: underline;
+}
+h1 {
+  text-decoration: underline;
+}
+

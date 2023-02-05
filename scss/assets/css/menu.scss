@@ -1,0 +1,25 @@
+// header .logo{
+
+// }
+// header .logo img{
+//     height: 60px;
+// }
+
+// header nav ul li a{
+//     display: block;
+//     color: red;
+// }
+
+// 2. Nesting
+
+// import that variable
+@import './includes/variable';
+@import './includes/header';
+
+main {
+  section.hero {
+    h1 {
+      text-decoration: line-through;
+    }
+  }
+}

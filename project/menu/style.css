@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: #f8f8f8;
+    font-size: 16px;
+
+}
+header{
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+header  .contact{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    
+}
+header .contact > div{
+    flex: 1;
+    justify-content: center;
+    border-right: 1px solid gray;
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    
+}
+
+header .contact > div i{
+    font-size: 50px;
+    color: green;
+}
+header .contact > div .info{
+    display: flex;
+    flex-direction: column;
+}
+
+header .menu{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: space-between;
+}
+
+
+header .menu nav ul a{
+  padding: 30px 15px;
+  display: block;
+  position: relative;
+
+}
+header nav ul li{
+    display: inline-block;
+}
+header .menu nav ul a::before{
+    content: '';
+    height: 5px;
+    width: 0%;
+    background-color: green;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: all 0.5s ease;
+
+}
+header .menu nav ul a:hover::before{
+    width: 100%;
+    
+}
+header .menu .logowrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .menu .logowrapper i{
+   font-size: 50px;
+   color: green;
+}
+
+header .menu .btn-contact{
+    background-color: green;
+    color: #fff;
+}
+
+header .menu .btn-toggle-menu{
+    background-color: green;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+
+}
+@media screen and ( max-width: 992px){
+    header .contact{
+        display: none;
+    }
+    header nav ul{
+        display: none;
+    }
+    header .menu{
+        padding: 15px;
+    }
+    header .logowrapper h1{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    header .menu nav .strMyMenu{
+        position: absolute;
+        z-index: 99;
+        display: block;
+        min-width: 300px;
+        width: 100%;
+        right: 0;
+        padding-top: 20px;
+
+    }
+    header .menu nav .strMyMenu li{
+        display: block;
+        text-align: center;
+    }
+
+}
+@media screen and ( min-width: 992px){
+    header .menu .btn-toggle-menu{
+        display: none;
+    }
+}
+

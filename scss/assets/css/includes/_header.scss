@@ -1,0 +1,56 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    nav {
+      button {
+        display: none;
+        background-color: green;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        li {
+          // sasa
+          a {
+            text-decoration: none;
+            color: $primaryColor;
+            display: block;
+            padding: 10px 15px;
+            &:hover {
+              color: green;
+            }
+          }
+          &:last-child {
+            background-color: green;
+            a {
+              color: #fff;
+              padding: 10px 15px;
+            }
+            &:hover {
+              background-color: orange;
+              a {
+                color: black;
+              }
+            }
+          }
+          &:nth-child(2) {
+            background-color: green;
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      a {
+        img {
+          height: 50px;
+          width: 50px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
